@@ -2,7 +2,7 @@
 
 > A curated list of Metaflow extensions, plugins, integrations, and resources.
 
-[Metaflow](https://metaflow.org) is a human-friendly Python/R framework for real-life ML, AI, and data science. Built at Netflix and maintained by Netflix and [Outerbounds](https://outerbounds.com).
+[Metaflow](https://metaflow.org) is a human-friendly Python/R framework for real-life ML, AI, and data science. Originally built at Netflix and open-sourced in 2019.
 
 ---
 
