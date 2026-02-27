@@ -8,23 +8,23 @@
 
 ## Contents
 
-- [🏗️ Core Infrastructure](#-core-infrastructure)
-- [☁️ Infrastructure & IaC](#-infrastructure--iac)
-- [📦 Dependency Management](#-dependency-management)
-- [🧩 Extension Mechanism & Templates](#-extension-mechanism--templates)
-- [🔀 Orchestration & Scheduling](#-orchestration--scheduling)
-- [⚡ Distributed Compute & Training](#-distributed-compute--training)
-- [💾 Model & Artifact Management](#-model--artifact-management)
-- [📊 Observability & Monitoring](#-observability--monitoring)
-- [🃏 Cards & Visualization](#-cards--visualization)
-- [🔌 Third-Party Integrations](#-third-party-integrations)
-- [🛠️ Developer Tooling](#-developer-tooling)
-- [🌍 Community Projects](#-community-projects)
-- [📚 Examples & Tutorials](#-examples--tutorials)
+- [🏗️ Core Infrastructure](#core-infrastructure)
+- [☁️ Infrastructure & IaC](#infrastructure--iac)
+- [📦 Dependency Management](#dependency-management)
+- [🧩 Extension Mechanism & Templates](#extension-mechanism--templates)
+- [🔀 Orchestration & Scheduling](#orchestration--scheduling)
+- [⚡ Distributed Compute & Training](#distributed-compute--training)
+- [💾 Model & Artifact Management](#model--artifact-management)
+- [📊 Observability & Monitoring](#observability--monitoring)
+- [🃏 Cards & Visualization](#cards--visualization)
+- [🔌 Third-Party Integrations](#third-party-integrations)
+- [🛠️ Developer Tooling](#developer-tooling)
+- [🌍 Community Projects](#community-projects)
+- [📚 Examples & Tutorials](#examples--tutorials)
 
 ---
 
-## 🏗️ Core Infrastructure
+## Core Infrastructure
 
 - [local_metaflow_deployment](https://github.com/outerbounds/local_metaflow_deployment) - Docker-based local stack: metadata service, PostgreSQL, and UI.
 - [metaflow](https://github.com/Netflix/metaflow) - Core framework with built-in `@kubernetes`, `@batch`, Argo, Airflow, and Step Functions support.
@@ -34,7 +34,7 @@
 
 ---
 
-## ☁️ Infrastructure & IaC
+## Infrastructure & IaC
 
 - [metaflow-docker-deployment](https://github.com/gabrieltardochi/metaflow-docker-deployment) - Community Docker Compose: metadata service + UI + MinIO + PostgreSQL.
 - [metaflow-tools](https://github.com/outerbounds/metaflow-tools) - CloudFormation, Terraform (AWS/Azure/GCP/Nebius), and Helm charts for Kubernetes.
@@ -43,14 +43,14 @@
 
 ---
 
-## 📦 Dependency Management
+## Dependency Management
 
 - [metaflow-nflx-extensions](https://github.com/Netflix/metaflow-nflx-extensions) - Netflix's enhanced `@conda`/`@pypi`: named environments, mixed conda+pip, and faster resolving via micromamba. Requires Metaflow ≥ 2.8.3.
 - [metaflow_extensions](https://github.com/nestauk/metaflow_extensions) - Adds `@pip` and a `preinstall` shell-hook for system-level deps on remote nodes. ⚠️ Built against Metaflow 2.7.x; verify compatibility.
 
 ---
 
-## 🧩 Extension Mechanism & Templates
+## Extension Mechanism & Templates
 
 - [config-examples](https://github.com/outerbounds/config-examples) - Examples using Metaflow's `Config` object for flow-level configuration.
 - [custom-decorator-examples](https://github.com/outerbounds/custom-decorator-examples) - Examples of user-defined decorators and mutators, including `@memoize` and `BaseFlow` patterns.
@@ -58,7 +58,7 @@
 
 ---
 
-## 🔀 Orchestration & Scheduling
+## Orchestration & Scheduling
 
 - [metaflow-dagster](https://github.com/npow/metaflow-dagster) - Dagster scheduling, observability, and UI for Metaflow pipelines.
 - [metaflow-flyte](https://github.com/npow/metaflow-flyte) - Schedule and monitor Metaflow pipelines through Flyte without rewriting them.
@@ -71,7 +71,7 @@
 
 ---
 
-## ⚡ Distributed Compute & Training
+## Distributed Compute & Training
 
 - [metaflow-deepspeed](https://github.com/outerbounds/metaflow-deepspeed) - `@deepspeed` for multi-node DeepSpeed training with S3/Azure checkpoint uploads. Experimental.
 - [metaflow-mpi](https://github.com/outerbounds/metaflow-mpi) - `@mpi` for multi-node MPI programs (C/Fortran/mpi4py). Experimental.
@@ -83,14 +83,14 @@
 
 ---
 
-## 💾 Model & Artifact Management
+## Model & Artifact Management
 
 - [metaflow-checkpoint](https://github.com/outerbounds/metaflow-checkpoint) - `@checkpoint`, `@model`, and `@huggingface_hub` for fault-tolerant training and model lineage. APIs may change.
 - [metaflow-checkpoint-examples](https://github.com/outerbounds/metaflow-checkpoint-examples) - Examples covering PyTorch, Keras, Lightning, and distributed DDP.
 
 ---
 
-## 📊 Observability & Monitoring
+## Observability & Monitoring
 
 - [metaflow-gpu-profile](https://github.com/outerbounds/metaflow-gpu-profile) - `@gpu_profile` decorator that renders GPU utilization as a Metaflow card.
 - [metaflow-measure](https://github.com/outerbounds/metaflow-measure) - Emit step metrics to Datadog and other backends via a `measure` API.
@@ -99,7 +99,7 @@
 
 ---
 
-## 🃏 Cards & Visualization
+## Cards & Visualization
 
 - [dynamic-card-examples](https://github.com/outerbounds/dynamic-card-examples) - Live cards with progress bars, Altair/Vega charts, maps, and custom JS.
 - [metaflow-card-altair](https://github.com/outerbounds/metaflow-card-altair) - Render Altair charts in Metaflow cards.
@@ -110,7 +110,7 @@
 
 ---
 
-## 🔌 Third-Party Integrations
+## Third-Party Integrations
 
 - [airflow-metaflow-demo](https://github.com/astronomer/airflow-metaflow-demo) - Metaflow + Airflow in Docker Compose with `KubernetesPodOperator` steps.
 - **Comet ML** - `@comet_flow` and `@comet_step` ship in the `comet_ml` package, including automatic Card export. [Docs](https://www.comet.com/docs/v2/integrations/third-party-tools/metaflow/)
@@ -121,7 +121,7 @@
 
 ---
 
-## 🛠️ Developer Tooling
+## Developer Tooling
 
 - [gha-metaflow](https://github.com/outerbounds/gha-metaflow) - GitHub Actions workflows that trigger Metaflow runs on push/PR.
 - [metaflow-dev-vscode](https://github.com/outerbounds/metaflow-dev-vscode) - VS Code extension with shortcuts for running flows and steps from the editor.
@@ -131,7 +131,7 @@
 
 ---
 
-## 🌍 Community Projects
+## Community Projects
 
 - [metaflow-transformers-tutorials](https://github.com/chiphuyen/metaflow-transformers-tutorials) - HuggingFace DistilBERT fine-tuning tutorials by Chip Huyen.
 - [post-modern-stack](https://github.com/jacopotagliabue/post-modern-stack) - Modern data stack + ML stack using dbt, SageMaker, and Metaflow.
@@ -140,7 +140,7 @@
 
 ---
 
-## 📚 Examples & Tutorials
+## Examples & Tutorials
 
 - [diffusion-metaflow](https://github.com/outerbounds/diffusion-metaflow) - Stable Diffusion text-to-image and text-to-video pipelines.
 - [dsbook](https://github.com/outerbounds/dsbook) - Code for *Effective Data Science Infrastructure* by Ville Tuulos.
