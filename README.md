@@ -111,6 +111,7 @@
 - [metaflow-card-notebook](https://github.com/outerbounds/metaflow-card-notebook) - Render Jupyter Notebooks as Metaflow cards. ⚠️ Last commit 2022.
 - [metaflow-card-scatter3d](https://github.com/outerbounds/metaflow-card-scatter3d) - Live 2D and 3D scatter plot card.
 - [metaflow-card-template](https://github.com/outerbounds/metaflow-card-template) - Starter template for building new card types.
+- [metaflow-dataprofiler](https://github.com/npow/metaflow-dataprofiler) - Instant EDA reports on every DataFrame in your Metaflow steps — zero code changes.
 - [metaflow-traincard](https://github.com/npow/metaflow-traincard) - Live loss curves, GPU telemetry, and checkpoints in your Metaflow run card.
 
 ---
@@ -130,7 +131,6 @@
 
 - [gha-metaflow](https://github.com/outerbounds/gha-metaflow) - GitHub Actions workflows that trigger Metaflow runs on push/PR.
 - [metaflow-contracts](https://github.com/npow/metaflow-contracts) - Catch bad data between Metaflow steps before it corrupts your pipeline.
-- [metaflow-dataprofiler](https://github.com/npow/metaflow-dataprofiler) - Instant EDA reports on every DataFrame in your Metaflow steps — zero code changes.
 - [metaflow-dev-vscode](https://github.com/outerbounds/metaflow-dev-vscode) - VS Code extension with shortcuts for running flows and steps from the editor.
 - [metaflow-diff](https://github.com/outerbounds/metaflow-diff) - Diff your working directory against a past Metaflow run.
 - [metaflow-mcp-server](https://github.com/npow/metaflow-mcp-server) - MCP server for inspecting runs, logs, and artifacts from any AI agent.
